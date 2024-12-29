@@ -120,7 +120,7 @@ const ModalCreateTask: React.FC<{
           نام
           <input
             type="text"
-            placeholder="مثلا : درس خواندن برای امتحان"
+            placeholder="مثلا : طراحی ظاهری برنامه کارها"
             required
             value={title}
             onChange={({ target }) => setTitle(target.value)}
@@ -142,7 +142,7 @@ const ModalCreateTask: React.FC<{
         <label>
           توضیحات (اختیاری)
           <textarea
-            placeholder="مثلا : تست زدن و حل مسئله"
+            placeholder="مثلا : تعیین پالت رنگی"
             className="w-full"
             value={description}
             onChange={({ target }) => setDescription(target.value)}

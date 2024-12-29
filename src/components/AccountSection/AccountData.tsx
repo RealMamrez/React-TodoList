@@ -33,12 +33,12 @@ const AccountData: React.FC = () => {
         <TasksDone />
         <DeleteTasks />
         <a
-          href="https://github.com/CodingWithEnjoy"
+          href="https://www.themamrez.ir/"
           className="mt-4 bg-rose-100 p-2 rounded-md text-rose-600 text-center transition hover:bg-rose-200 dark:bg-slate-700/[.3] dark:text-slate-200"
         >
           توسعه داده شده توسط
           <br />
-          برنامه نویسی با لذت
+          TheMamrez
         </a>
       </section>
     </LayoutMenus>

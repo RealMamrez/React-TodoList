@@ -15,12 +15,12 @@ const getSavedDirectories = (): string[] => {
   let dirList: string[] = [];
   if (localStorage.getItem("directories")) {
     dirList = JSON.parse(localStorage.getItem("directories")!);
-    const mainDirExists = dirList.some((dir: string) => dir === "اصلی");
+    const mainDirExists = dirList.some((dir: string) => dir === "Main");
     if (!mainDirExists) {
-      dirList.push("اصلی");
+      dirList.push("Main");
     }
   } else {
-    dirList.push("اصلی");
+    dirList.push("Main");
   }
 
   if (localStorage.getItem("tasks")) {
@@ -85,7 +85,7 @@ const tasksSlice = createSlice({
     },
     deleteAllData(state) {
       state.tasks = [];
-      state.directories = ["اصلی"];
+      state.directories = ["Main"];
     },
     createDirectory(state, action: PayloadAction<string>) {
       const newDirectory: string = action.payload;
